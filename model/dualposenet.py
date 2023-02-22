@@ -15,15 +15,15 @@ import numpy as np
 import math
 import cmath
 import glob
-import _pickle as cPickle
+import pickle as cPickle
 from tqdm import tqdm
 import cv2
 from transforms3d.euler import quat2mat
 
 from layers import point_transformation
 from modules import encoder, explicit_decoder, implicit_decoder
-from dataloder import Fetcher
-from pc_utils import load_depth, backproject, pc2sphericalmap
+from provider.dataloder import Fetcher
+from utils.pc_utils import load_depth, backproject, pc2sphericalmap
 
 
 class DualPoseNet(object):

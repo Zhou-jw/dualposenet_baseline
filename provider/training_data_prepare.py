@@ -8,14 +8,14 @@ import glob
 import cv2
 import math
 import numpy as np
-import _pickle as cPickle
+import pickle as cPickle
 from tqdm import tqdm
 from autolab_core import RigidTransform
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 ROOT_DIR = BASE_DIR
 sys.path.append(os.path.join(ROOT_DIR, '..', 'utils'))
-from align_utils import align_nocs_to_depth
+from utils.align_utils import align_nocs_to_depth
 
 sym_id = [0,1,3]
 DATA_DIR = 'data'

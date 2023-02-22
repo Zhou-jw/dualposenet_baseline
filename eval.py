@@ -16,7 +16,7 @@ import sys
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 ROOT_DIR = BASE_DIR
 sys.path.append(os.path.join(ROOT_DIR, 'utils'))
-from evaluation_utils import evaluate
+from utils.evaluation_utils import evaluate
 
 
 CAMERA25_path = os.path.join('results', 'CAMERA25')
